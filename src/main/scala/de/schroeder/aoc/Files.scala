@@ -8,4 +8,8 @@ object Files {
     Source.fromInputStream(Files.getClass.getResourceAsStream(path), "UTF-8").getLines().toList
   }
 
+  def splitLine(line: String): List[String] = {
+    line.split("\\s+").toList
+  }
+
 }
